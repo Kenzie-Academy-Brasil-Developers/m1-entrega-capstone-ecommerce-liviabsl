@@ -34,77 +34,7 @@
     <div class="container-produto">
         <ul class="fileira">
             
-            <li class="card">
-                <img class="imagem-produto" src="img/camiseta_branca.svg">
-                <main class="dados-produto">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="titulo-produto">Short Sleeve T-shirt</h2>
-                    <p class="descricao-produto">
-                        Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um tecido mais fino...</p>
-                    <h3 class="preco-produto">R$100,00</h3>
-                    <p class="adicionar-carrinho">Adicionar ao carrinho</p>
-                </main>
-            </li>
             
-            <li class="card">
-                <img class="imagem-produto" src="img/gorro.svg">
-                <main class="dados-produto">
-                    <p class="categoria">Acessórios</p>
-                    <h2 class="titulo-produto">Black Hat</h2>
-                    <p class="descricao-produto">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...
-                    </p>
-                    <h3 class="preco-produto">R$100,00</h3>
-                    <p class="adicionar-carrinho">Adicionar ao carrinho</p>
-                </main>
-            </li>
-
-            <li class="card">
-                <img class="imagem-produto" src="img/camiseta_preta.svg">
-                <main class="dados-produto">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="titulo-produto">Black T-shirt</h2>
-                    <p class="descricao-produto">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um tecido mais fino...</p>
-                </p>
-                    <h3 class="preco-produto">R$100,00</h3>
-                    <p class="adicionar-carrinho">Adicionar ao carrinho</p>
-                </main>
-            </li>
-
-            <li class="card">
-                <img class="imagem-produto" src="img/jaqueta.svg">
-                <main class="dados-produto">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="titulo-produto">Black Jacket</h2>
-                    <p class="descricao-produto">
-                        Agora você encontrou a jaqueta básica do seu guarda-roupa. É feito de um tecido mais fino...</p>
-                    <h3 class="preco-produto">R$100,00</h3>
-                    <p class="adicionar-carrinho">Adicionar ao carrinho</p>
-                </main>
-            </li>
-            
-            <li class="card">
-                <img class="imagem-produto" src="img/mascara.svg">
-                <main class="dados-produto">
-                    <p class="categoria">Acessórios</p>
-                    <h2 class="titulo-produto">Black Mask</h2>
-                    <p class="descricao-produto">A máscara chegou! Este novo modelo tem um ajuste confortável que garante que...
-                    </p>
-                    <h3 class="preco-produto">R$100,00</h3>
-                    <p class="adicionar-carrinho">Adicionar ao carrinho</p>
-                </main>
-            </li>
-
-            <li class="card">
-                <img class="imagem-produto" src="img/moletom.svg">
-                <main class="dados-produto">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="titulo-produto">Black Sweatshirt</h2>
-                    <p class="descricao-produto">Agora você encontrou o moletom básico do seu guarda-roupa. É feito de um tecido mais fino...</p>
-                </p>
-                    <h3 class="preco-produto">R$100,00</h3>
-                    <p class="adicionar-carrinho">Adicionar ao carrinho</p>
-                </main>
-            </li>
             
         </ul>
     </div>
@@ -114,16 +44,31 @@
             <input class="botao" type="submit" value="Pesquisar">
             </div>
             
-            <ul class="carrinho-de-compras">
-                <h1 class="titulo-carrinho">Carrinho de compras</h1>
-        
-                <li class="fundo-carrinho">
-                    <p class="produto-carrinho">O carrinho está vazio</p>
-                    <p class="adicionar">Adicionar itens</p>
-                </li>
+            <div class="carrinho-de-compras">
+                <h1 class="titulo-carrinho">Carrinho de compras</h1>  
 
-            </ul>
+                <div class="fundo-carrinho" style="overflow-y: scroll;"> 
+                    <div class="div-carrinho-vazio" id="div-carrinho-vazio" style="visibility: visible;">
+                        <li>Carrinho vazio</li>
+                        <li>Adicione itens</li>
+                    </div>
+                    <div class="div-carrinho-itens" id="div-carrinho-itens" style="visibility: hidden;">
+                        <li>Carrinho vazio</li>
+                        <li>Adicione itens</li>
+                    </div>
+                </div>
+
+                <div class="rodape-carrinho">
+                    <span><b>Quantidade</b></span>
+                    <span id="quantidade"><b>1</b></span>
+                    <span><b>Total</b></span>
+                    <span id="total"><b>11222</b></span>
+                </div>
+
+            </div>
       </aside>
 
+<script src="./js/database.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
